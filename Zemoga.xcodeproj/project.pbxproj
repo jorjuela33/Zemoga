@@ -1,0 +1,2008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323F1F5CA89D31A99E9D79AD /* Pods_ApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770075E2376BA4FA02B5EF6E /* Pods_ApplicationTests.framework */; };
+		AEFB2F86545CDBCEF952508A /* Pods_ZemogaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDE414138B35D31AE7D831E /* Pods_ZemogaTests.framework */; };
+		C7689675FA64495124419D7C /* Pods_Zemoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E804D38E4A04F12E453175DF /* Pods_Zemoga.framework */; };
+		CF02CA302348445600EF7D6B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA2F2348445600EF7D6B /* Post.swift */; };
+		CF02CA322348449E00EF7D6B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA312348449E00EF7D6B /* Repository.swift */; };
+		CF02CA34234844AF00EF7D6B /* RepositoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA33234844AF00EF7D6B /* RepositoryProvider.swift */; };
+		CF02CA36234844DF00EF7D6B /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA35234844DE00EF7D6B /* PostsRepository.swift */; };
+		CF02CA3C234845C800EF7D6B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA3B234845C800EF7D6B /* Repository.swift */; };
+		CF02CA3E234845FD00EF7D6B /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA3D234845FD00EF7D6B /* PostsRepository.swift */; };
+		CF02CA442348468200EF7D6B /* RequestMonitorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA432348468200EF7D6B /* RequestMonitorObserver.swift */; };
+		CF02CA462348469800EF7D6B /* RequestMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA452348469800EF7D6B /* RequestMonitor.swift */; };
+		CF02CA48234846AC00EF7D6B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA47234846AC00EF7D6B /* Connection.swift */; };
+		CF02CA4A234846DB00EF7D6B /* ConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA49234846DB00EF7D6B /* ConnectionRequest.swift */; };
+		CF02CA4C234846F400EF7D6B /* ConnectionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA4B234846F400EF7D6B /* ConnectionTree.swift */; };
+		CF02CA4F2348474A00EF7D6B /* TrackedConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA4E2348474A00EF7D6B /* TrackedConnectionRequest.swift */; };
+		CF02CA512348476400EF7D6B /* TrackedConnectionRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA502348476400EF7D6B /* TrackedConnectionRequestManager.swift */; };
+		CF02CA542348478F00EF7D6B /* EventTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA532348478F00EF7D6B /* EventTree.swift */; };
+		CF02CA562348479F00EF7D6B /* AtomicNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA552348479F00EF7D6B /* AtomicNumber.swift */; };
+		CF02CA58234847B500EF7D6B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA57234847B500EF7D6B /* Event.swift */; };
+		CF02CA5B234847FD00EF7D6B /* ServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA5A234847FD00EF7D6B /* ServerInfo.swift */; };
+		CF02CA5D2348485D00EF7D6B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA5C2348485D00EF7D6B /* Operators.swift */; };
+		CF02CA60234848AE00EF7D6B /* DataRequest+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA5F234848AE00EF7D6B /* DataRequest+Decodable.swift */; };
+		CF02CA61234848E000EF7D6B /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA382348459D00EF7D6B /* StateMachine.swift */; };
+		CF02CA63234848F400EF7D6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA62234848F400EF7D6B /* Network.swift */; };
+		CF02CA672348498700EF7D6B /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA662348498700EF7D6B /* PostEntity.swift */; };
+		CF02CA6A23484A0600EF7D6B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA6923484A0600EF7D6B /* Protocols.swift */; };
+		CF02CA6C23484B5C00EF7D6B /* Sequence+Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA6B23484B5C00EF7D6B /* Sequence+Transformations.swift */; };
+		CF02CA6F23484BB800EF7D6B /* DatabaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA6E23484BB800EF7D6B /* DatabaseEvent.swift */; };
+		CF02CA7123484BCF00EF7D6B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7023484BCF00EF7D6B /* Database.swift */; };
+		CF02CA7323484BDD00EF7D6B /* DatabaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7223484BDD00EF7D6B /* DatabaseObserver.swift */; };
+		CF02CA7523484BF100EF7D6B /* DatabaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7423484BF100EF7D6B /* DatabaseQuery.swift */; };
+		CF02CA7723484C0200EF7D6B /* SyncPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7623484C0200EF7D6B /* SyncPoint.swift */; };
+		CF02CA7A23484C3000EF7D6B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7923484C3000EF7D6B /* View.swift */; };
+		CF02CA7D23484C5C00EF7D6B /* ZMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7C23484C5C00EF7D6B /* ZMError.swift */; };
+		CF02CA7F23484CAB00EF7D6B /* SyncTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA7E23484CAB00EF7D6B /* SyncTree.swift */; };
+		CF02CA8023484CDB00EF7D6B /* Zemoga.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF34ED2A23484148004BB3BC /* Zemoga.xcdatamodeld */; };
+		CF02CA8223484E7200EF7D6B /* PostManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA8123484E7200EF7D6B /* PostManagedObject.swift */; };
+		CF02CA8423484F3000EF7D6B /* RepositoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA8323484F3000EF7D6B /* RepositoryProvider.swift */; };
+		CF02CA872348502800EF7D6B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA862348502800EF7D6B /* Comment.swift */; };
+		CF02CA8A234850C300EF7D6B /* CommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA89234850C300EF7D6B /* CommentEntity.swift */; };
+		CF02CA8C234850DA00EF7D6B /* CommentManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA8B234850DA00EF7D6B /* CommentManagedObject.swift */; };
+		CF02CA8F234852AE00EF7D6B /* CommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA8E234852AE00EF7D6B /* CommentsRepository.swift */; };
+		CF02CA92234852EE00EF7D6B /* CommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA91234852EE00EF7D6B /* CommentsRepository.swift */; };
+		CF02CA952348D54400EF7D6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA942348D54400EF7D6B /* User.swift */; };
+		CF02CA982348DF8300EF7D6B /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA972348DF8300EF7D6B /* UsersRepository.swift */; };
+		CF02CA9B2348DFE200EF7D6B /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA9A2348DFE200EF7D6B /* UsersRepository.swift */; };
+		CF02CA9E2348E05C00EF7D6B /* UserManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA9D2348E05C00EF7D6B /* UserManagedObject.swift */; };
+		CF02CAA02348E08600EF7D6B /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA9F2348E08600EF7D6B /* UserEntity.swift */; };
+		CF02CAA42348E48300EF7D6B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAA32348E48300EF7D6B /* Application.swift */; };
+		CF02CAA82348E54700EF7D6B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAA72348E54700EF7D6B /* NavigationController.swift */; };
+		CF02CAAA2348E58300EF7D6B /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAA92348E58300EF7D6B /* NavigationConfigurator.swift */; };
+		CF02CAAD2348E62F00EF7D6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAAC2348E62F00EF7D6B /* ViewController.swift */; };
+		CF02CAAF2348E64700EF7D6B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAAE2348E64700EF7D6B /* UIViewController.swift */; };
+		CF02CAB92348E6E500EF7D6B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAB82348E6E500EF7D6B /* ActivityIndicator.swift */; };
+		CF02CABC2348E70700EF7D6B /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CABB2348E70700EF7D6B /* ErrorTracker.swift */; };
+		CF02CABF2348E73E00EF7D6B /* ErrorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CABE2348E73E00EF7D6B /* ErrorBuilder.swift */; };
+		CF02CAC22348E78100EF7D6B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAC12348E78100EF7D6B /* Message.swift */; };
+		CF02CAC52348E88300EF7D6B /* Reactive+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAC42348E88300EF7D6B /* Reactive+Extensions.swift */; };
+		CF02CAC72348E8F900EF7D6B /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAC62348E8F900EF7D6B /* PostsPresenter.swift */; };
+		CF02CACB2348E97900EF7D6B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CACA2348E97900EF7D6B /* CollectionViewController.swift */; };
+		CF02CACD2348E98F00EF7D6B /* SwipeToEditStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CACC2348E98F00EF7D6B /* SwipeToEditStateMachine.swift */; };
+		CF02CACE2348E9B900EF7D6B /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CA382348459D00EF7D6B /* StateMachine.swift */; };
+		CF02CAD12348EA0600EF7D6B /* LayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAD02348EA0600EF7D6B /* LayoutAttributes.swift */; };
+		CF02CAD32348EA1300EF7D6B /* CollectionViewGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAD22348EA1300EF7D6B /* CollectionViewGridLayout.swift */; };
+		CF02CAD52348EA5900EF7D6B /* LayoutMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAD42348EA5900EF7D6B /* LayoutMetrics.swift */; };
+		CF02CAD82348EA8E00EF7D6B /* CollectionPlaceholderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAD72348EA8E00EF7D6B /* CollectionPlaceholderReusableView.swift */; };
+		CF02CADA2348EABC00EF7D6B /* BasicDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAD92348EABC00EF7D6B /* BasicDataSource.swift */; };
+		CF02CADE2348EAF500EF7D6B /* ContentLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CADD2348EAF500EF7D6B /* ContentLoading.swift */; };
+		CF02CAE02348EB0A00EF7D6B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CADF2348EB0A00EF7D6B /* DataSource.swift */; };
+		CF02CAE22348EB2100EF7D6B /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAE12348EB2100EF7D6B /* DataSourceDelegate.swift */; };
+		CF02CAE42348EB3900EF7D6B /* LoadingStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAE32348EB3900EF7D6B /* LoadingStateMachine.swift */; };
+		CF02CAE62348EB5100EF7D6B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAE52348EB5100EF7D6B /* Observer.swift */; };
+		CF02CAE82348ED7000EF7D6B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAE72348ED7000EF7D6B /* CollectionViewCell.swift */; };
+		CF02CAEB2348EDD500EF7D6B /* PostsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAEA2348EDD500EF7D6B /* PostsDatasource.swift */; };
+		CF02CAEE2348EE4600EF7D6B /* PostDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAED2348EE4600EF7D6B /* PostDisplayItem.swift */; };
+		CF02CAF12348EF0500EF7D6B /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAF02348EF0500EF7D6B /* PostCollectionViewCell.swift */; };
+		CF02CAF32348F18900EF7D6B /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAF22348F18900EF7D6B /* CollectionViewDelegate.swift */; };
+		CF02CAF52348F27C00EF7D6B /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAF42348F27C00EF7D6B /* PostsViewController.swift */; };
+		CF02CAF72348F30600EF7D6B /* PostsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAF62348F30600EF7D6B /* PostsWireframe.swift */; };
+		CF02CAF92348F3E300EF7D6B /* Storyboard+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CAF82348F3E300EF7D6B /* Storyboard+Initialization.swift */; };
+		CF34ED2223484148004BB3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34ED2123484148004BB3BC /* AppDelegate.swift */; };
+		CF34ED2423484148004BB3BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34ED2323484148004BB3BC /* SceneDelegate.swift */; };
+		CF34ED2923484148004BB3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF34ED2723484148004BB3BC /* Main.storyboard */; };
+		CF34ED2E2348414C004BB3BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF34ED2D2348414C004BB3BC /* Assets.xcassets */; };
+		CF34ED312348414C004BB3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF34ED2F2348414C004BB3BC /* LaunchScreen.storyboard */; };
+		CF34ED3C2348414C004BB3BC /* ZemogaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34ED3B2348414C004BB3BC /* ZemogaTests.swift */; };
+		CF34ED4F2348418F004BB3BC /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = CF34ED4D2348418F004BB3BC /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF34ED522348418F004BB3BC /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF34ED4B2348418F004BB3BC /* Domain.framework */; };
+		CF34ED532348418F004BB3BC /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF34ED4B2348418F004BB3BC /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF34ED66234841A2004BB3BC /* Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF34ED5D234841A1004BB3BC /* Application.framework */; };
+		CF34ED6D234841A2004BB3BC /* ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34ED6C234841A2004BB3BC /* ApplicationTests.swift */; };
+		CF34ED6F234841A2004BB3BC /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = CF34ED5F234841A1004BB3BC /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF34ED72234841A2004BB3BC /* Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF34ED5D234841A1004BB3BC /* Application.framework */; };
+		CF34ED73234841A2004BB3BC /* Application.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF34ED5D234841A1004BB3BC /* Application.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF8ED2C8234A2863006F1961 /* SegmentedDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2C7234A2863006F1961 /* SegmentedDatasource.swift */; };
+		CF8ED2CA234A28E2006F1961 /* SegmentedControlCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2C9234A28E2006F1961 /* SegmentedControlCollectionReusableView.swift */; };
+		CF8ED2D1234A3FF7006F1961 /* CommentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2D0234A3FF7006F1961 /* CommentCollectionViewCell.swift */; };
+		CF8ED2D4234A4035006F1961 /* CommentDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2D3234A4035006F1961 /* CommentDisplayItem.swift */; };
+		CF8ED2D6234A411A006F1961 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2D5234A411A006F1961 /* PostPresenter.swift */; };
+		CF8ED2D9234A4168006F1961 /* PostDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2D8234A4168006F1961 /* PostDatasource.swift */; };
+		CF8ED2DB234A42C5006F1961 /* PostCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2DA234A42C5006F1961 /* PostCollectionViewController.swift */; };
+		CF8ED2DD234A4373006F1961 /* PostWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2DC234A4373006F1961 /* PostWireframe.swift */; };
+		CF8ED2E0234A48F1006F1961 /* PostReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2DF234A48F1006F1961 /* PostReusableView.swift */; };
+		CF8ED2E3234A6744006F1961 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2E2234A6744006F1961 /* LoadingIndicator.swift */; };
+		CF8ED2ED234A78CE006F1961 /* ConnectionTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2E5234A78CE006F1961 /* ConnectionTreeTests.swift */; };
+		CF8ED2EE234A78CE006F1961 /* RequestMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2E7234A78CE006F1961 /* RequestMonitorTests.swift */; };
+		CF8ED2F0234A78CE006F1961 /* PersistentConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2E9234A78CE006F1961 /* PersistentConnectionTests.swift */; };
+		CF8ED2F1234A78CE006F1961 /* ConnectionRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2EA234A78CE006F1961 /* ConnectionRequestsTests.swift */; };
+		CF8ED2F2234A78CE006F1961 /* TrackedConnectionRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2EC234A78CE006F1961 /* TrackedConnectionRequestTests.swift */; };
+		CF8ED2F5234A7942006F1961 /* ConnectionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2F4234A7942006F1961 /* ConnectionMock.swift */; };
+		CF8ED2F8234A7AB0006F1961 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED2F7234A7AB0006F1961 /* NetworkTests.swift */; };
+		D5C7F505CC6221E07C76BD66 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FF7E85248CF3ED3799B6F /* Pods_Application.framework */; };
+		F4925589AA47D18EF2C20C2B /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD6943AA104BD4FCC7FC13A /* Pods_Domain.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF34ED382348414C004BB3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF34ED1623484148004BB3BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF34ED1D23484148004BB3BC;
+			remoteInfo = Zemoga;
+		};
+		CF34ED502348418F004BB3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF34ED1623484148004BB3BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF34ED4A2348418F004BB3BC;
+			remoteInfo = Domain;
+		};
+		CF34ED67234841A2004BB3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF34ED1623484148004BB3BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF34ED5C234841A1004BB3BC;
+			remoteInfo = Application;
+		};
+		CF34ED69234841A2004BB3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF34ED1623484148004BB3BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF34ED1D23484148004BB3BC;
+			remoteInfo = Zemoga;
+		};
+		CF34ED70234841A2004BB3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF34ED1623484148004BB3BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF34ED5C234841A1004BB3BC;
+			remoteInfo = Application;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF34ED572348418F004BB3BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF34ED532348418F004BB3BC /* Domain.framework in Embed Frameworks */,
+				CF34ED73234841A2004BB3BC /* Application.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03B77E658B52CC6EDBAE2DA3 /* Pods-ApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-ApplicationTests/Pods-ApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C4302BC519C8FCAE19B6E35 /* Pods-Zemoga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga.release.xcconfig"; path = "Target Support Files/Pods-Zemoga/Pods-Zemoga.release.xcconfig"; sourceTree = "<group>"; };
+		3C56AA590F43BB413B67D1F5 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		73CB67FAF77C710B98A8DABD /* Pods-ZemogaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaTests.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaTests/Pods-ZemogaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		770075E2376BA4FA02B5EF6E /* Pods_ApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C2E124DB1663E50F1F733EE /* Pods-ZemogaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaTests.release.xcconfig"; path = "Target Support Files/Pods-ZemogaTests/Pods-ZemogaTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CDE414138B35D31AE7D831E /* Pods_ZemogaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB9C442C0A4B425C13BB726 /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
+		B2B07A2B005389B7DCFDBE64 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		BB72F90C6FE91595E426D2E5 /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
+		C40FF7E85248CF3ED3799B6F /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF02CA2F2348445600EF7D6B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CF02CA312348449E00EF7D6B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CF02CA33234844AF00EF7D6B /* RepositoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProvider.swift; sourceTree = "<group>"; };
+		CF02CA35234844DE00EF7D6B /* PostsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		CF02CA382348459D00EF7D6B /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		CF02CA3B234845C800EF7D6B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CF02CA3D234845FD00EF7D6B /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		CF02CA432348468200EF7D6B /* RequestMonitorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMonitorObserver.swift; sourceTree = "<group>"; };
+		CF02CA452348469800EF7D6B /* RequestMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMonitor.swift; sourceTree = "<group>"; };
+		CF02CA47234846AC00EF7D6B /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		CF02CA49234846DB00EF7D6B /* ConnectionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRequest.swift; sourceTree = "<group>"; };
+		CF02CA4B234846F400EF7D6B /* ConnectionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionTree.swift; sourceTree = "<group>"; };
+		CF02CA4E2348474A00EF7D6B /* TrackedConnectionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedConnectionRequest.swift; sourceTree = "<group>"; };
+		CF02CA502348476400EF7D6B /* TrackedConnectionRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedConnectionRequestManager.swift; sourceTree = "<group>"; };
+		CF02CA532348478F00EF7D6B /* EventTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTree.swift; sourceTree = "<group>"; };
+		CF02CA552348479F00EF7D6B /* AtomicNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicNumber.swift; sourceTree = "<group>"; };
+		CF02CA57234847B500EF7D6B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CF02CA5A234847FD00EF7D6B /* ServerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerInfo.swift; sourceTree = "<group>"; };
+		CF02CA5C2348485D00EF7D6B /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		CF02CA5F234848AE00EF7D6B /* DataRequest+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Decodable.swift"; sourceTree = "<group>"; };
+		CF02CA62234848F400EF7D6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CF02CA662348498700EF7D6B /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		CF02CA6923484A0600EF7D6B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CF02CA6B23484B5C00EF7D6B /* Sequence+Transformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Transformations.swift"; sourceTree = "<group>"; };
+		CF02CA6E23484BB800EF7D6B /* DatabaseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseEvent.swift; sourceTree = "<group>"; };
+		CF02CA7023484BCF00EF7D6B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		CF02CA7223484BDD00EF7D6B /* DatabaseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObserver.swift; sourceTree = "<group>"; };
+		CF02CA7423484BF100EF7D6B /* DatabaseQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseQuery.swift; sourceTree = "<group>"; };
+		CF02CA7623484C0200EF7D6B /* SyncPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncPoint.swift; sourceTree = "<group>"; };
+		CF02CA7923484C3000EF7D6B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CF02CA7C23484C5C00EF7D6B /* ZMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMError.swift; sourceTree = "<group>"; };
+		CF02CA7E23484CAB00EF7D6B /* SyncTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncTree.swift; sourceTree = "<group>"; };
+		CF02CA8123484E7200EF7D6B /* PostManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManagedObject.swift; sourceTree = "<group>"; };
+		CF02CA8323484F3000EF7D6B /* RepositoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProvider.swift; sourceTree = "<group>"; };
+		CF02CA862348502800EF7D6B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		CF02CA89234850C300EF7D6B /* CommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEntity.swift; sourceTree = "<group>"; };
+		CF02CA8B234850DA00EF7D6B /* CommentManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentManagedObject.swift; sourceTree = "<group>"; };
+		CF02CA8E234852AE00EF7D6B /* CommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRepository.swift; sourceTree = "<group>"; };
+		CF02CA91234852EE00EF7D6B /* CommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRepository.swift; sourceTree = "<group>"; };
+		CF02CA942348D54400EF7D6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CF02CA972348DF8300EF7D6B /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		CF02CA9A2348DFE200EF7D6B /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		CF02CA9D2348E05C00EF7D6B /* UserManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagedObject.swift; sourceTree = "<group>"; };
+		CF02CA9F2348E08600EF7D6B /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		CF02CAA32348E48300EF7D6B /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		CF02CAA72348E54700EF7D6B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CF02CAA92348E58300EF7D6B /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		CF02CAAC2348E62F00EF7D6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF02CAAE2348E64700EF7D6B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CF02CAB82348E6E500EF7D6B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		CF02CABB2348E70700EF7D6B /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		CF02CABE2348E73E00EF7D6B /* ErrorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBuilder.swift; sourceTree = "<group>"; };
+		CF02CAC12348E78100EF7D6B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CF02CAC42348E88300EF7D6B /* Reactive+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extensions.swift"; sourceTree = "<group>"; };
+		CF02CAC62348E8F900EF7D6B /* PostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		CF02CACA2348E97900EF7D6B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CF02CACC2348E98F00EF7D6B /* SwipeToEditStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToEditStateMachine.swift; sourceTree = "<group>"; };
+		CF02CAD02348EA0600EF7D6B /* LayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAttributes.swift; sourceTree = "<group>"; };
+		CF02CAD22348EA1300EF7D6B /* CollectionViewGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewGridLayout.swift; sourceTree = "<group>"; };
+		CF02CAD42348EA5900EF7D6B /* LayoutMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMetrics.swift; sourceTree = "<group>"; };
+		CF02CAD72348EA8E00EF7D6B /* CollectionPlaceholderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPlaceholderReusableView.swift; sourceTree = "<group>"; };
+		CF02CAD92348EABC00EF7D6B /* BasicDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataSource.swift; sourceTree = "<group>"; };
+		CF02CADD2348EAF500EF7D6B /* ContentLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoading.swift; sourceTree = "<group>"; };
+		CF02CADF2348EB0A00EF7D6B /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CF02CAE12348EB2100EF7D6B /* DataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
+		CF02CAE32348EB3900EF7D6B /* LoadingStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateMachine.swift; sourceTree = "<group>"; };
+		CF02CAE52348EB5100EF7D6B /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		CF02CAE72348ED7000EF7D6B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CF02CAEA2348EDD500EF7D6B /* PostsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDatasource.swift; sourceTree = "<group>"; };
+		CF02CAED2348EE4600EF7D6B /* PostDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDisplayItem.swift; sourceTree = "<group>"; };
+		CF02CAF02348EF0500EF7D6B /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF02CAF22348F18900EF7D6B /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CF02CAF42348F27C00EF7D6B /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		CF02CAF62348F30600EF7D6B /* PostsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsWireframe.swift; sourceTree = "<group>"; };
+		CF02CAF82348F3E300EF7D6B /* Storyboard+Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Initialization.swift"; sourceTree = "<group>"; };
+		CF34ED1E23484148004BB3BC /* Zemoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zemoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF34ED2123484148004BB3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		CF34ED2323484148004BB3BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+		CF34ED2823484148004BB3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF34ED2B23484148004BB3BC /* Zemoga.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zemoga.xcdatamodel; sourceTree = "<group>"; };
+		CF34ED2D2348414C004BB3BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF34ED302348414C004BB3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF34ED322348414C004BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF34ED372348414C004BB3BC /* ZemogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF34ED3B2348414C004BB3BC /* ZemogaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaTests.swift; sourceTree = "<group>"; };
+		CF34ED3D2348414C004BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF34ED4B2348418F004BB3BC /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF34ED4D2348418F004BB3BC /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		CF34ED4E2348418F004BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF34ED5D234841A1004BB3BC /* Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF34ED5F234841A1004BB3BC /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		CF34ED60234841A1004BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF34ED65234841A2004BB3BC /* ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF34ED6C234841A2004BB3BC /* ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTests.swift; sourceTree = "<group>"; };
+		CF34ED6E234841A2004BB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8ED2C7234A2863006F1961 /* SegmentedDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedDatasource.swift; sourceTree = "<group>"; };
+		CF8ED2C9234A28E2006F1961 /* SegmentedControlCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlCollectionReusableView.swift; sourceTree = "<group>"; };
+		CF8ED2D0234A3FF7006F1961 /* CommentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF8ED2D3234A4035006F1961 /* CommentDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDisplayItem.swift; sourceTree = "<group>"; };
+		CF8ED2D5234A411A006F1961 /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		CF8ED2D8234A4168006F1961 /* PostDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDatasource.swift; sourceTree = "<group>"; };
+		CF8ED2DA234A42C5006F1961 /* PostCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewController.swift; sourceTree = "<group>"; };
+		CF8ED2DC234A4373006F1961 /* PostWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWireframe.swift; sourceTree = "<group>"; };
+		CF8ED2DF234A48F1006F1961 /* PostReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReusableView.swift; sourceTree = "<group>"; };
+		CF8ED2E2234A6744006F1961 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		CF8ED2E5234A78CE006F1961 /* ConnectionTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionTreeTests.swift; sourceTree = "<group>"; };
+		CF8ED2E7234A78CE006F1961 /* RequestMonitorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMonitorTests.swift; sourceTree = "<group>"; };
+		CF8ED2E9234A78CE006F1961 /* PersistentConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentConnectionTests.swift; sourceTree = "<group>"; };
+		CF8ED2EA234A78CE006F1961 /* ConnectionRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRequestsTests.swift; sourceTree = "<group>"; };
+		CF8ED2EC234A78CE006F1961 /* TrackedConnectionRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackedConnectionRequestTests.swift; sourceTree = "<group>"; };
+		CF8ED2F4234A7942006F1961 /* ConnectionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionMock.swift; sourceTree = "<group>"; };
+		CF8ED2F7234A7AB0006F1961 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		D7CD3195F77D3A6EFD946E75 /* Pods-Zemoga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga.debug.xcconfig"; path = "Target Support Files/Pods-Zemoga/Pods-Zemoga.debug.xcconfig"; sourceTree = "<group>"; };
+		DAFFE8354D29D485386F926C /* Pods-ApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-ApplicationTests/Pods-ApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		E804D38E4A04F12E453175DF /* Pods_Zemoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zemoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD6943AA104BD4FCC7FC13A /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF34ED1B23484148004BB3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF34ED522348418F004BB3BC /* Domain.framework in Frameworks */,
+				CF34ED72234841A2004BB3BC /* Application.framework in Frameworks */,
+				C7689675FA64495124419D7C /* Pods_Zemoga.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED342348414C004BB3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFB2F86545CDBCEF952508A /* Pods_ZemogaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED482348418F004BB3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4925589AA47D18EF2C20C2B /* Pods_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED5A234841A1004BB3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C7F505CC6221E07C76BD66 /* Pods_Application.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED62234841A2004BB3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF34ED66234841A2004BB3BC /* Application.framework in Frameworks */,
+				323F1F5CA89D31A99E9D79AD /* Pods_ApplicationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C994D02C0CF49FD86ED38FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40FF7E85248CF3ED3799B6F /* Pods_Application.framework */,
+				770075E2376BA4FA02B5EF6E /* Pods_ApplicationTests.framework */,
+				FAD6943AA104BD4FCC7FC13A /* Pods_Domain.framework */,
+				E804D38E4A04F12E453175DF /* Pods_Zemoga.framework */,
+				7CDE414138B35D31AE7D831E /* Pods_ZemogaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A629D36A07B93234E8A0FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB72F90C6FE91595E426D2E5 /* Pods-Application.debug.xcconfig */,
+				9EB9C442C0A4B425C13BB726 /* Pods-Application.release.xcconfig */,
+				03B77E658B52CC6EDBAE2DA3 /* Pods-ApplicationTests.debug.xcconfig */,
+				DAFFE8354D29D485386F926C /* Pods-ApplicationTests.release.xcconfig */,
+				B2B07A2B005389B7DCFDBE64 /* Pods-Domain.debug.xcconfig */,
+				3C56AA590F43BB413B67D1F5 /* Pods-Domain.release.xcconfig */,
+				D7CD3195F77D3A6EFD946E75 /* Pods-Zemoga.debug.xcconfig */,
+				0C4302BC519C8FCAE19B6E35 /* Pods-Zemoga.release.xcconfig */,
+				73CB67FAF77C710B98A8DABD /* Pods-ZemogaTests.debug.xcconfig */,
+				7C2E124DB1663E50F1F733EE /* Pods-ZemogaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF02CA29234843EB00EF7D6B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA8D234852A000EF7D6B /* Comment */,
+				CF02CA2A234843F400EF7D6B /* Posts */,
+				CF02CA962348DF6D00EF7D6B /* Users */,
+				CF02CA312348449E00EF7D6B /* Repository.swift */,
+				CF02CA33234844AF00EF7D6B /* RepositoryProvider.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CF02CA2A234843F400EF7D6B /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA35234844DE00EF7D6B /* PostsRepository.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		CF02CA2D2348444300EF7D6B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA852348501E00EF7D6B /* Comment */,
+				CF02CA2E2348444700EF7D6B /* Post */,
+				CF02CA932348D52A00EF7D6B /* User */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CF02CA2E2348444700EF7D6B /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA2F2348445600EF7D6B /* Post.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		CF02CA372348458600EF7D6B /* Shared Code */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA382348459D00EF7D6B /* StateMachine.swift */,
+			);
+			path = "Shared Code";
+			sourceTree = "<group>";
+		};
+		CF02CA3A234845BC00EF7D6B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA90234852E200EF7D6B /* Comments */,
+				CF02CA3F2348461200EF7D6B /* Posts */,
+				CF02CA992348DFD400EF7D6B /* Users */,
+				CF02CA3B234845C800EF7D6B /* Repository.swift */,
+				CF02CA8323484F3000EF7D6B /* RepositoryProvider.swift */,
+				CF02CA7E23484CAB00EF7D6B /* SyncTree.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CF02CA3F2348461200EF7D6B /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA3D234845FD00EF7D6B /* PostsRepository.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		CF02CA402348464600EF7D6B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA5A234847FD00EF7D6B /* ServerInfo.swift */,
+				CF02CA62234848F400EF7D6B /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CF02CA412348465500EF7D6B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA422348466000EF7D6B /* Monitor */,
+				CF02CA4D2348472F00EF7D6B /* Tracked  */,
+				CF02CA47234846AC00EF7D6B /* Connection.swift */,
+				CF02CA49234846DB00EF7D6B /* ConnectionRequest.swift */,
+				CF02CA4B234846F400EF7D6B /* ConnectionTree.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		CF02CA422348466000EF7D6B /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA432348468200EF7D6B /* RequestMonitorObserver.swift */,
+				CF02CA452348469800EF7D6B /* RequestMonitor.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		CF02CA4D2348472F00EF7D6B /* Tracked  */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA4E2348474A00EF7D6B /* TrackedConnectionRequest.swift */,
+				CF02CA502348476400EF7D6B /* TrackedConnectionRequestManager.swift */,
+			);
+			path = "Tracked ";
+			sourceTree = "<group>";
+		};
+		CF02CA522348477B00EF7D6B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA552348479F00EF7D6B /* AtomicNumber.swift */,
+				CF02CA532348478F00EF7D6B /* EventTree.swift */,
+				CF02CA57234847B500EF7D6B /* Event.swift */,
+				CF02CA5C2348485D00EF7D6B /* Operators.swift */,
+				CF02CA6923484A0600EF7D6B /* Protocols.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF02CA5E234848A000EF7D6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA5F234848AE00EF7D6B /* DataRequest+Decodable.swift */,
+				CF02CA6B23484B5C00EF7D6B /* Sequence+Transformations.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF02CA642348496C00EF7D6B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA88234850B700EF7D6B /* Comment */,
+				CF02CA652348497C00EF7D6B /* Post */,
+				CF02CA9C2348E04700EF7D6B /* User */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CF02CA652348497C00EF7D6B /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA662348498700EF7D6B /* PostEntity.swift */,
+				CF02CA8123484E7200EF7D6B /* PostManagedObject.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		CF02CA6D23484B9A00EF7D6B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA6E23484BB800EF7D6B /* DatabaseEvent.swift */,
+				CF02CA7023484BCF00EF7D6B /* Database.swift */,
+				CF02CA7223484BDD00EF7D6B /* DatabaseObserver.swift */,
+				CF02CA7423484BF100EF7D6B /* DatabaseQuery.swift */,
+				CF02CA7623484C0200EF7D6B /* SyncPoint.swift */,
+				CF02CA7923484C3000EF7D6B /* View.swift */,
+				CF34ED2A23484148004BB3BC /* Zemoga.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CF02CA7B23484C4800EF7D6B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA7C23484C5C00EF7D6B /* ZMError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		CF02CA852348501E00EF7D6B /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA862348502800EF7D6B /* Comment.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		CF02CA88234850B700EF7D6B /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA89234850C300EF7D6B /* CommentEntity.swift */,
+				CF02CA8B234850DA00EF7D6B /* CommentManagedObject.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		CF02CA8D234852A000EF7D6B /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA8E234852AE00EF7D6B /* CommentsRepository.swift */,
+			);
+			name = Comment;
+			path = "Commentç";
+			sourceTree = "<group>";
+		};
+		CF02CA90234852E200EF7D6B /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA91234852EE00EF7D6B /* CommentsRepository.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		CF02CA932348D52A00EF7D6B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA942348D54400EF7D6B /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CF02CA962348DF6D00EF7D6B /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA972348DF8300EF7D6B /* UsersRepository.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		CF02CA992348DFD400EF7D6B /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA9A2348DFE200EF7D6B /* UsersRepository.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		CF02CA9C2348E04700EF7D6B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA9F2348E08600EF7D6B /* UserEntity.swift */,
+				CF02CA9D2348E05C00EF7D6B /* UserManagedObject.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CF02CAA12348E44E00EF7D6B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF34ED2123484148004BB3BC /* AppDelegate.swift */,
+				CF34ED2323484148004BB3BC /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CF02CAA22348E47600EF7D6B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAA32348E48300EF7D6B /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CF02CAA52348E51D00EF7D6B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2E1234A6738006F1961 /* Loading */,
+				CF02CAA62348E53000EF7D6B /* Navigation Controller */,
+				CF02CAAB2348E60800EF7D6B /* View Controller */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CF02CAA62348E53000EF7D6B /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAA72348E54700EF7D6B /* NavigationController.swift */,
+				CF02CAA92348E58300EF7D6B /* NavigationConfigurator.swift */,
+			);
+			path = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		CF02CAAB2348E60800EF7D6B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAAC2348E62F00EF7D6B /* ViewController.swift */,
+				CF02CAAE2348E64700EF7D6B /* UIViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		CF02CAB02348E68100EF7D6B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAB12348E68A00EF7D6B /* Posts */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF02CAB12348E68A00EF7D6B /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2CB234A3FC5006F1961 /* Post */,
+				CF02CAB22348E69100EF7D6B /* Main */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		CF02CAB22348E69100EF7D6B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAB52348E69E00EF7D6B /* Presenter */,
+				CF02CAB42348E69900EF7D6B /* View */,
+				CF02CAB32348E69400EF7D6B /* Wireframe */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CF02CAB32348E69400EF7D6B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAF62348F30600EF7D6B /* PostsWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CF02CAB42348E69900EF7D6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAE92348EDAF00EF7D6B /* Datasource */,
+				CF02CAEC2348EE3500EF7D6B /* Display Item */,
+				CF02CAEF2348EEE700EF7D6B /* Cell */,
+				CF02CAF42348F27C00EF7D6B /* PostsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF02CAB52348E69E00EF7D6B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAC62348E8F900EF7D6B /* PostsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF02CAB62348E6C800EF7D6B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAB72348E6D100EF7D6B /* Activity Indicator */,
+				CF02CABD2348E72200EF7D6B /* Error Builder */,
+				CF02CABA2348E6F400EF7D6B /* Error Tracker */,
+				CF02CAC02348E76A00EF7D6B /* Message */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CF02CAB72348E6D100EF7D6B /* Activity Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAB82348E6E500EF7D6B /* ActivityIndicator.swift */,
+			);
+			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
+		CF02CABA2348E6F400EF7D6B /* Error Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CABB2348E70700EF7D6B /* ErrorTracker.swift */,
+			);
+			path = "Error Tracker";
+			sourceTree = "<group>";
+		};
+		CF02CABD2348E72200EF7D6B /* Error Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CABE2348E73E00EF7D6B /* ErrorBuilder.swift */,
+			);
+			path = "Error Builder";
+			sourceTree = "<group>";
+		};
+		CF02CAC02348E76A00EF7D6B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAC12348E78100EF7D6B /* Message.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		CF02CAC32348E87100EF7D6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAC42348E88300EF7D6B /* Reactive+Extensions.swift */,
+				CF02CAF82348F3E300EF7D6B /* Storyboard+Initialization.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF02CAC82348E93100EF7D6B /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CACF2348E9D600EF7D6B /* Layouts */,
+				CF02CAC92348E96400EF7D6B /* View Controller */,
+				CF02CAD62348EA7A00EF7D6B /* View */,
+				CF02CAD92348EABC00EF7D6B /* BasicDataSource.swift */,
+				CF02CAF22348F18900EF7D6B /* CollectionViewDelegate.swift */,
+				CF02CADD2348EAF500EF7D6B /* ContentLoading.swift */,
+				CF02CADF2348EB0A00EF7D6B /* DataSource.swift */,
+				CF02CAE12348EB2100EF7D6B /* DataSourceDelegate.swift */,
+				CF02CAE32348EB3900EF7D6B /* LoadingStateMachine.swift */,
+				CF02CAE52348EB5100EF7D6B /* Observer.swift */,
+				CF8ED2C7234A2863006F1961 /* SegmentedDatasource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		CF02CAC92348E96400EF7D6B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CACA2348E97900EF7D6B /* CollectionViewController.swift */,
+				CF02CACC2348E98F00EF7D6B /* SwipeToEditStateMachine.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		CF02CACF2348E9D600EF7D6B /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAD22348EA1300EF7D6B /* CollectionViewGridLayout.swift */,
+				CF02CAD02348EA0600EF7D6B /* LayoutAttributes.swift */,
+				CF02CAD42348EA5900EF7D6B /* LayoutMetrics.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		CF02CAD62348EA7A00EF7D6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAD72348EA8E00EF7D6B /* CollectionPlaceholderReusableView.swift */,
+				CF02CAE72348ED7000EF7D6B /* CollectionViewCell.swift */,
+				CF8ED2C9234A28E2006F1961 /* SegmentedControlCollectionReusableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF02CAE92348EDAF00EF7D6B /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAEA2348EDD500EF7D6B /* PostsDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		CF02CAEC2348EE3500EF7D6B /* Display Item */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAED2348EE4600EF7D6B /* PostDisplayItem.swift */,
+			);
+			path = "Display Item";
+			sourceTree = "<group>";
+		};
+		CF02CAEF2348EEE700EF7D6B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAF02348EF0500EF7D6B /* PostCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF34ED1523484148004BB3BC = {
+			isa = PBXGroup;
+			children = (
+				CF34ED2023484148004BB3BC /* Zemoga */,
+				CF34ED3A2348414C004BB3BC /* ZemogaTests */,
+				CF34ED5E234841A1004BB3BC /* Application */,
+				CF34ED6B234841A2004BB3BC /* ApplicationTests */,
+				CF34ED4C2348418F004BB3BC /* Domain */,
+				CF34ED1F23484148004BB3BC /* Products */,
+				3A629D36A07B93234E8A0FD3 /* Pods */,
+				CF02CA372348458600EF7D6B /* Shared Code */,
+				0C994D02C0CF49FD86ED38FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF34ED1F23484148004BB3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF34ED1E23484148004BB3BC /* Zemoga.app */,
+				CF34ED372348414C004BB3BC /* ZemogaTests.xctest */,
+				CF34ED4B2348418F004BB3BC /* Domain.framework */,
+				CF34ED5D234841A1004BB3BC /* Application.framework */,
+				CF34ED65234841A2004BB3BC /* ApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF34ED2023484148004BB3BC /* Zemoga */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CAA22348E47600EF7D6B /* Application */,
+				CF02CAA12348E44E00EF7D6B /* Base */,
+				CF02CAA52348E51D00EF7D6B /* Components */,
+				CF02CAC82348E93100EF7D6B /* Datasources */,
+				CF02CAC32348E87100EF7D6B /* Extensions */,
+				CF02CAB02348E68100EF7D6B /* Modules */,
+				CF02CAB62348E6C800EF7D6B /* Utilities */,
+				CF34ED2723484148004BB3BC /* Main.storyboard */,
+				CF34ED2D2348414C004BB3BC /* Assets.xcassets */,
+				CF34ED2F2348414C004BB3BC /* LaunchScreen.storyboard */,
+				CF34ED322348414C004BB3BC /* Info.plist */,
+			);
+			path = Zemoga;
+			sourceTree = "<group>";
+		};
+		CF34ED3A2348414C004BB3BC /* ZemogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF34ED3B2348414C004BB3BC /* ZemogaTests.swift */,
+				CF34ED3D2348414C004BB3BC /* Info.plist */,
+			);
+			path = ZemogaTests;
+			sourceTree = "<group>";
+		};
+		CF34ED4C2348418F004BB3BC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA2D2348444300EF7D6B /* Entities */,
+				CF02CA7B23484C4800EF7D6B /* Error */,
+				CF02CA29234843EB00EF7D6B /* Repositories */,
+				CF34ED4D2348418F004BB3BC /* Domain.h */,
+				CF34ED4E2348418F004BB3BC /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CF34ED5E234841A1004BB3BC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CF02CA412348465500EF7D6B /* Connection */,
+				CF02CA522348477B00EF7D6B /* Core */,
+				CF02CA6D23484B9A00EF7D6B /* Database */,
+				CF02CA642348496C00EF7D6B /* Entities */,
+				CF02CA5E234848A000EF7D6B /* Extensions */,
+				CF02CA402348464600EF7D6B /* Network */,
+				CF02CA3A234845BC00EF7D6B /* Repositories */,
+				CF34ED5F234841A1004BB3BC /* Application.h */,
+				CF34ED60234841A1004BB3BC /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CF34ED6B234841A2004BB3BC /* ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2E4234A78CE006F1961 /* Connection */,
+				CF8ED2F6234A7AA2006F1961 /* Network */,
+				CF8ED2F3234A792B006F1961 /* Mocks */,
+				CF34ED6C234841A2004BB3BC /* ApplicationTests.swift */,
+				CF34ED6E234841A2004BB3BC /* Info.plist */,
+			);
+			path = ApplicationTests;
+			sourceTree = "<group>";
+		};
+		CF8ED2CB234A3FC5006F1961 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2CE234A3FD4006F1961 /* Presenter */,
+				CF8ED2CD234A3FD0006F1961 /* View */,
+				CF8ED2CC234A3FCC006F1961 /* Wireframe */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		CF8ED2CC234A3FCC006F1961 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2DC234A4373006F1961 /* PostWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CF8ED2CD234A3FD0006F1961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2CF234A3FD8006F1961 /* Cell */,
+				CF8ED2D7234A4155006F1961 /* Datasource */,
+				CF8ED2D2234A4022006F1961 /* Display Item */,
+				CF8ED2DE234A48D0006F1961 /* Reusable View */,
+				CF8ED2DA234A42C5006F1961 /* PostCollectionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF8ED2CE234A3FD4006F1961 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2D5234A411A006F1961 /* PostPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF8ED2CF234A3FD8006F1961 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2D0234A3FF7006F1961 /* CommentCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF8ED2D2234A4022006F1961 /* Display Item */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2D3234A4035006F1961 /* CommentDisplayItem.swift */,
+			);
+			path = "Display Item";
+			sourceTree = "<group>";
+		};
+		CF8ED2D7234A4155006F1961 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2D8234A4168006F1961 /* PostDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		CF8ED2DE234A48D0006F1961 /* Reusable View */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2DF234A48F1006F1961 /* PostReusableView.swift */,
+			);
+			path = "Reusable View";
+			sourceTree = "<group>";
+		};
+		CF8ED2E1234A6738006F1961 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2E2234A6744006F1961 /* LoadingIndicator.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		CF8ED2E4234A78CE006F1961 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2E6234A78CE006F1961 /* Monitor */,
+				CF8ED2EB234A78CE006F1961 /* Tracked Manager */,
+				CF8ED2E5234A78CE006F1961 /* ConnectionTreeTests.swift */,
+				CF8ED2E9234A78CE006F1961 /* PersistentConnectionTests.swift */,
+				CF8ED2EA234A78CE006F1961 /* ConnectionRequestsTests.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		CF8ED2E6234A78CE006F1961 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2E7234A78CE006F1961 /* RequestMonitorTests.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		CF8ED2EB234A78CE006F1961 /* Tracked Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2EC234A78CE006F1961 /* TrackedConnectionRequestTests.swift */,
+			);
+			path = "Tracked Manager";
+			sourceTree = "<group>";
+		};
+		CF8ED2F3234A792B006F1961 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2F4234A7942006F1961 /* ConnectionMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CF8ED2F6234A7AA2006F1961 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CF8ED2F7234A7AB0006F1961 /* NetworkTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF34ED462348418F004BB3BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF34ED4F2348418F004BB3BC /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED58234841A1004BB3BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF34ED6F234841A2004BB3BC /* Application.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF34ED1D23484148004BB3BC /* Zemoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF34ED402348414C004BB3BC /* Build configuration list for PBXNativeTarget "Zemoga" */;
+			buildPhases = (
+				A5CDA997C8E9C125AD9F1A30 /* [CP] Check Pods Manifest.lock */,
+				CF34ED1A23484148004BB3BC /* Sources */,
+				CF34ED1B23484148004BB3BC /* Frameworks */,
+				CF34ED1C23484148004BB3BC /* Resources */,
+				CF34ED572348418F004BB3BC /* Embed Frameworks */,
+				1262DCEDC10AAC065CC5744B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF34ED512348418F004BB3BC /* PBXTargetDependency */,
+				CF34ED71234841A2004BB3BC /* PBXTargetDependency */,
+			);
+			name = Zemoga;
+			productName = Zemoga;
+			productReference = CF34ED1E23484148004BB3BC /* Zemoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF34ED362348414C004BB3BC /* ZemogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF34ED432348414C004BB3BC /* Build configuration list for PBXNativeTarget "ZemogaTests" */;
+			buildPhases = (
+				FD697B08E9C380B4086AB18E /* [CP] Check Pods Manifest.lock */,
+				CF34ED332348414C004BB3BC /* Sources */,
+				CF34ED342348414C004BB3BC /* Frameworks */,
+				CF34ED352348414C004BB3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF34ED392348414C004BB3BC /* PBXTargetDependency */,
+			);
+			name = ZemogaTests;
+			productName = ZemogaTests;
+			productReference = CF34ED372348414C004BB3BC /* ZemogaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF34ED4A2348418F004BB3BC /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF34ED542348418F004BB3BC /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				4CABB4A09937EB6F328EBA43 /* [CP] Check Pods Manifest.lock */,
+				CF34ED462348418F004BB3BC /* Headers */,
+				CF34ED472348418F004BB3BC /* Sources */,
+				CF34ED482348418F004BB3BC /* Frameworks */,
+				CF34ED492348418F004BB3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = CF34ED4B2348418F004BB3BC /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF34ED5C234841A1004BB3BC /* Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF34ED74234841A2004BB3BC /* Build configuration list for PBXNativeTarget "Application" */;
+			buildPhases = (
+				D6324E07FCC2C17345989065 /* [CP] Check Pods Manifest.lock */,
+				CF34ED58234841A1004BB3BC /* Headers */,
+				CF34ED59234841A1004BB3BC /* Sources */,
+				CF34ED5A234841A1004BB3BC /* Frameworks */,
+				CF34ED5B234841A1004BB3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Application;
+			productName = Application;
+			productReference = CF34ED5D234841A1004BB3BC /* Application.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF34ED64234841A2004BB3BC /* ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF34ED77234841A2004BB3BC /* Build configuration list for PBXNativeTarget "ApplicationTests" */;
+			buildPhases = (
+				F038F6CAF5F0ADF301B9D3E0 /* [CP] Check Pods Manifest.lock */,
+				CF34ED61234841A2004BB3BC /* Sources */,
+				CF34ED62234841A2004BB3BC /* Frameworks */,
+				CF34ED63234841A2004BB3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF34ED68234841A2004BB3BC /* PBXTargetDependency */,
+				CF34ED6A234841A2004BB3BC /* PBXTargetDependency */,
+			);
+			name = ApplicationTests;
+			productName = ApplicationTests;
+			productReference = CF34ED65234841A2004BB3BC /* ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF34ED1623484148004BB3BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					CF34ED1D23484148004BB3BC = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CF34ED362348414C004BB3BC = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CF34ED1D23484148004BB3BC;
+					};
+					CF34ED4A2348418F004BB3BC = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					CF34ED5C234841A1004BB3BC = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					CF34ED64234841A2004BB3BC = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CF34ED1D23484148004BB3BC;
+					};
+				};
+			};
+			buildConfigurationList = CF34ED1923484148004BB3BC /* Build configuration list for PBXProject "Zemoga" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF34ED1523484148004BB3BC;
+			productRefGroup = CF34ED1F23484148004BB3BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF34ED1D23484148004BB3BC /* Zemoga */,
+				CF34ED362348414C004BB3BC /* ZemogaTests */,
+				CF34ED4A2348418F004BB3BC /* Domain */,
+				CF34ED5C234841A1004BB3BC /* Application */,
+				CF34ED64234841A2004BB3BC /* ApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF34ED1C23484148004BB3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF34ED312348414C004BB3BC /* LaunchScreen.storyboard in Resources */,
+				CF34ED2E2348414C004BB3BC /* Assets.xcassets in Resources */,
+				CF34ED2923484148004BB3BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED352348414C004BB3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED492348418F004BB3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED5B234841A1004BB3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED63234841A2004BB3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1262DCEDC10AAC065CC5744B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zemoga/Pods-Zemoga-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zemoga/Pods-Zemoga-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zemoga/Pods-Zemoga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CABB4A09937EB6F328EBA43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CDA997C8E9C125AD9F1A30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zemoga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6324E07FCC2C17345989065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Application-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F038F6CAF5F0ADF301B9D3E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplicationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD697B08E9C380B4086AB18E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF34ED1A23484148004BB3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8ED2E3234A6744006F1961 /* LoadingIndicator.swift in Sources */,
+				CF02CAEB2348EDD500EF7D6B /* PostsDatasource.swift in Sources */,
+				CF02CAEE2348EE4600EF7D6B /* PostDisplayItem.swift in Sources */,
+				CF02CAF32348F18900EF7D6B /* CollectionViewDelegate.swift in Sources */,
+				CF02CAAF2348E64700EF7D6B /* UIViewController.swift in Sources */,
+				CF02CAE22348EB2100EF7D6B /* DataSourceDelegate.swift in Sources */,
+				CF02CAAD2348E62F00EF7D6B /* ViewController.swift in Sources */,
+				CF02CAD32348EA1300EF7D6B /* CollectionViewGridLayout.swift in Sources */,
+				CF02CAC52348E88300EF7D6B /* Reactive+Extensions.swift in Sources */,
+				CF02CACE2348E9B900EF7D6B /* StateMachine.swift in Sources */,
+				CF8ED2E0234A48F1006F1961 /* PostReusableView.swift in Sources */,
+				CF8ED2DB234A42C5006F1961 /* PostCollectionViewController.swift in Sources */,
+				CF02CAD52348EA5900EF7D6B /* LayoutMetrics.swift in Sources */,
+				CF02CACD2348E98F00EF7D6B /* SwipeToEditStateMachine.swift in Sources */,
+				CF8ED2D4234A4035006F1961 /* CommentDisplayItem.swift in Sources */,
+				CF02CAA42348E48300EF7D6B /* Application.swift in Sources */,
+				CF02CAF52348F27C00EF7D6B /* PostsViewController.swift in Sources */,
+				CF8ED2D6234A411A006F1961 /* PostPresenter.swift in Sources */,
+				CF8ED2DD234A4373006F1961 /* PostWireframe.swift in Sources */,
+				CF02CACB2348E97900EF7D6B /* CollectionViewController.swift in Sources */,
+				CF8ED2D9234A4168006F1961 /* PostDatasource.swift in Sources */,
+				CF02CAA82348E54700EF7D6B /* NavigationController.swift in Sources */,
+				CF8ED2C8234A2863006F1961 /* SegmentedDatasource.swift in Sources */,
+				CF02CAC72348E8F900EF7D6B /* PostsPresenter.swift in Sources */,
+				CF8ED2D1234A3FF7006F1961 /* CommentCollectionViewCell.swift in Sources */,
+				CF02CABC2348E70700EF7D6B /* ErrorTracker.swift in Sources */,
+				CF02CAE62348EB5100EF7D6B /* Observer.swift in Sources */,
+				CF02CAE02348EB0A00EF7D6B /* DataSource.swift in Sources */,
+				CF02CAE42348EB3900EF7D6B /* LoadingStateMachine.swift in Sources */,
+				CF02CAB92348E6E500EF7D6B /* ActivityIndicator.swift in Sources */,
+				CF02CAF72348F30600EF7D6B /* PostsWireframe.swift in Sources */,
+				CF02CAC22348E78100EF7D6B /* Message.swift in Sources */,
+				CF02CAF12348EF0500EF7D6B /* PostCollectionViewCell.swift in Sources */,
+				CF02CAD12348EA0600EF7D6B /* LayoutAttributes.swift in Sources */,
+				CF02CAD82348EA8E00EF7D6B /* CollectionPlaceholderReusableView.swift in Sources */,
+				CF02CAE82348ED7000EF7D6B /* CollectionViewCell.swift in Sources */,
+				CF02CABF2348E73E00EF7D6B /* ErrorBuilder.swift in Sources */,
+				CF34ED2223484148004BB3BC /* AppDelegate.swift in Sources */,
+				CF8ED2CA234A28E2006F1961 /* SegmentedControlCollectionReusableView.swift in Sources */,
+				CF02CADE2348EAF500EF7D6B /* ContentLoading.swift in Sources */,
+				CF02CAAA2348E58300EF7D6B /* NavigationConfigurator.swift in Sources */,
+				CF34ED2423484148004BB3BC /* SceneDelegate.swift in Sources */,
+				CF02CAF92348F3E300EF7D6B /* Storyboard+Initialization.swift in Sources */,
+				CF02CADA2348EABC00EF7D6B /* BasicDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED332348414C004BB3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF34ED3C2348414C004BB3BC /* ZemogaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED472348418F004BB3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF02CA7D23484C5C00EF7D6B /* ZMError.swift in Sources */,
+				CF02CA982348DF8300EF7D6B /* UsersRepository.swift in Sources */,
+				CF02CA872348502800EF7D6B /* Comment.swift in Sources */,
+				CF02CA302348445600EF7D6B /* Post.swift in Sources */,
+				CF02CA34234844AF00EF7D6B /* RepositoryProvider.swift in Sources */,
+				CF02CA952348D54400EF7D6B /* User.swift in Sources */,
+				CF02CA322348449E00EF7D6B /* Repository.swift in Sources */,
+				CF02CA8F234852AE00EF7D6B /* CommentsRepository.swift in Sources */,
+				CF02CA36234844DF00EF7D6B /* PostsRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED59234841A1004BB3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF02CA7A23484C3000EF7D6B /* View.swift in Sources */,
+				CF02CA92234852EE00EF7D6B /* CommentsRepository.swift in Sources */,
+				CF02CA542348478F00EF7D6B /* EventTree.swift in Sources */,
+				CF02CA7723484C0200EF7D6B /* SyncPoint.swift in Sources */,
+				CF02CA7523484BF100EF7D6B /* DatabaseQuery.swift in Sources */,
+				CF02CA7F23484CAB00EF7D6B /* SyncTree.swift in Sources */,
+				CF02CA4F2348474A00EF7D6B /* TrackedConnectionRequest.swift in Sources */,
+				CF02CA8023484CDB00EF7D6B /* Zemoga.xcdatamodeld in Sources */,
+				CF02CA6F23484BB800EF7D6B /* DatabaseEvent.swift in Sources */,
+				CF02CA462348469800EF7D6B /* RequestMonitor.swift in Sources */,
+				CF02CA9E2348E05C00EF7D6B /* UserManagedObject.swift in Sources */,
+				CF02CA61234848E000EF7D6B /* StateMachine.swift in Sources */,
+				CF02CA4C234846F400EF7D6B /* ConnectionTree.swift in Sources */,
+				CF02CA58234847B500EF7D6B /* Event.swift in Sources */,
+				CF02CA8C234850DA00EF7D6B /* CommentManagedObject.swift in Sources */,
+				CF02CA442348468200EF7D6B /* RequestMonitorObserver.swift in Sources */,
+				CF02CA48234846AC00EF7D6B /* Connection.swift in Sources */,
+				CF02CA3C234845C800EF7D6B /* Repository.swift in Sources */,
+				CF02CA6A23484A0600EF7D6B /* Protocols.swift in Sources */,
+				CF02CA5B234847FD00EF7D6B /* ServerInfo.swift in Sources */,
+				CF02CA8223484E7200EF7D6B /* PostManagedObject.swift in Sources */,
+				CF02CA7323484BDD00EF7D6B /* DatabaseObserver.swift in Sources */,
+				CF02CA7123484BCF00EF7D6B /* Database.swift in Sources */,
+				CF02CA9B2348DFE200EF7D6B /* UsersRepository.swift in Sources */,
+				CF02CA63234848F400EF7D6B /* Network.swift in Sources */,
+				CF02CA5D2348485D00EF7D6B /* Operators.swift in Sources */,
+				CF02CA8A234850C300EF7D6B /* CommentEntity.swift in Sources */,
+				CF02CA562348479F00EF7D6B /* AtomicNumber.swift in Sources */,
+				CF02CA3E234845FD00EF7D6B /* PostsRepository.swift in Sources */,
+				CF02CA4A234846DB00EF7D6B /* ConnectionRequest.swift in Sources */,
+				CF02CA512348476400EF7D6B /* TrackedConnectionRequestManager.swift in Sources */,
+				CF02CAA02348E08600EF7D6B /* UserEntity.swift in Sources */,
+				CF02CA8423484F3000EF7D6B /* RepositoryProvider.swift in Sources */,
+				CF02CA672348498700EF7D6B /* PostEntity.swift in Sources */,
+				CF02CA60234848AE00EF7D6B /* DataRequest+Decodable.swift in Sources */,
+				CF02CA6C23484B5C00EF7D6B /* Sequence+Transformations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF34ED61234841A2004BB3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8ED2F2234A78CE006F1961 /* TrackedConnectionRequestTests.swift in Sources */,
+				CF34ED6D234841A2004BB3BC /* ApplicationTests.swift in Sources */,
+				CF8ED2F8234A7AB0006F1961 /* NetworkTests.swift in Sources */,
+				CF8ED2F1234A78CE006F1961 /* ConnectionRequestsTests.swift in Sources */,
+				CF8ED2EE234A78CE006F1961 /* RequestMonitorTests.swift in Sources */,
+				CF8ED2F0234A78CE006F1961 /* PersistentConnectionTests.swift in Sources */,
+				CF8ED2ED234A78CE006F1961 /* ConnectionTreeTests.swift in Sources */,
+				CF8ED2F5234A7942006F1961 /* ConnectionMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF34ED392348414C004BB3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF34ED1D23484148004BB3BC /* Zemoga */;
+			targetProxy = CF34ED382348414C004BB3BC /* PBXContainerItemProxy */;
+		};
+		CF34ED512348418F004BB3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF34ED4A2348418F004BB3BC /* Domain */;
+			targetProxy = CF34ED502348418F004BB3BC /* PBXContainerItemProxy */;
+		};
+		CF34ED68234841A2004BB3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF34ED5C234841A1004BB3BC /* Application */;
+			targetProxy = CF34ED67234841A2004BB3BC /* PBXContainerItemProxy */;
+		};
+		CF34ED6A234841A2004BB3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF34ED1D23484148004BB3BC /* Zemoga */;
+			targetProxy = CF34ED69234841A2004BB3BC /* PBXContainerItemProxy */;
+		};
+		CF34ED71234841A2004BB3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF34ED5C234841A1004BB3BC /* Application */;
+			targetProxy = CF34ED70234841A2004BB3BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF34ED2723484148004BB3BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF34ED2823484148004BB3BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF34ED2F2348414C004BB3BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF34ED302348414C004BB3BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF34ED3E2348414C004BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF34ED3F2348414C004BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF34ED412348414C004BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CD3195F77D3A6EFD946E75 /* Pods-Zemoga.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zemoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Zemoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF34ED422348414C004BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4302BC519C8FCAE19B6E35 /* Pods-Zemoga.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zemoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Zemoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF34ED442348414C004BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CB67FAF77C710B98A8DABD /* Pods-ZemogaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZemogaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZemogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga.app/Zemoga";
+			};
+			name = Debug;
+		};
+		CF34ED452348414C004BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2E124DB1663E50F1F733EE /* Pods-ZemogaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZemogaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZemogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga.app/Zemoga";
+			};
+			name = Release;
+		};
+		CF34ED552348418F004BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B07A2B005389B7DCFDBE64 /* Pods-Domain.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF34ED562348418F004BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C56AA590F43BB413B67D1F5 /* Pods-Domain.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF34ED75234841A2004BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB72F90C6FE91595E426D2E5 /* Pods-Application.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Application/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Application;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF34ED76234841A2004BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB9C442C0A4B425C13BB726 /* Pods-Application.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Application/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Application;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF34ED78234841A2004BB3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B77E658B52CC6EDBAE2DA3 /* Pods-ApplicationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga.app/Zemoga";
+			};
+			name = Debug;
+		};
+		CF34ED79234841A2004BB3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAFFE8354D29D485386F926C /* Pods-ApplicationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga.app/Zemoga";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF34ED1923484148004BB3BC /* Build configuration list for PBXProject "Zemoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF34ED3E2348414C004BB3BC /* Debug */,
+				CF34ED3F2348414C004BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF34ED402348414C004BB3BC /* Build configuration list for PBXNativeTarget "Zemoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF34ED412348414C004BB3BC /* Debug */,
+				CF34ED422348414C004BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF34ED432348414C004BB3BC /* Build configuration list for PBXNativeTarget "ZemogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF34ED442348414C004BB3BC /* Debug */,
+				CF34ED452348414C004BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF34ED542348418F004BB3BC /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF34ED552348418F004BB3BC /* Debug */,
+				CF34ED562348418F004BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF34ED74234841A2004BB3BC /* Build configuration list for PBXNativeTarget "Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF34ED75234841A2004BB3BC /* Debug */,
+				CF34ED76234841A2004BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF34ED77234841A2004BB3BC /* Build configuration list for PBXNativeTarget "ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF34ED78234841A2004BB3BC /* Debug */,
+				CF34ED79234841A2004BB3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF34ED2A23484148004BB3BC /* Zemoga.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF34ED2B23484148004BB3BC /* Zemoga.xcdatamodel */,
+			);
+			currentVersion = CF34ED2B23484148004BB3BC /* Zemoga.xcdatamodel */;
+			path = Zemoga.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF34ED1623484148004BB3BC /* Project object */;
+}
